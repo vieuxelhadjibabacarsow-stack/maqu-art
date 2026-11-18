@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie | Maqu'Art</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="./dist/index.js" defer></script>
+</head>
+
+<body class="bg-black text-white min-h-screen">
+
+  <!-- NAVIGATION -->
+  <header class="border-b border-lime-300/20">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-lime-300">
+        MAQU'ART
+      </a>
+
+      <div class="flex gap-5 text-sm">
+        <a href="index.html" class="hover:text-lime-300">Accueil</a>
+        <a href="apropos.html" class="hover:text-lime-300">À propos</a>
+        <a href="galerie.html" class="text-lime-300">Galerie</a>
+        <a href="contact.html" class="hover:text-lime-300">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- INTRODUCTION -->
+  <main class="max-w-7xl mx-auto px-6 py-16">
+
+    <section class="text-center mb-16">
+      <p class="text-lime-300 uppercase tracking-[0.4em] text-sm mb-4">
+        L'univers artistique
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        Ma galerie <span class="text-lime-300">artistique.</span>
+      </h1>
+
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        Découvrez mes créations, mes réalisations et mes différentes
+        explorations artistiques à travers les couleurs, les formes
+        et l'imagination.
+      </p>
+    </section>
+
+    <div class="h-px bg-gradient-to-r from-transparent via-lime-300 to-transparent mb-16"></div>
+
+    <!-- GALERIE -->
+    <section>
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold">
+          Mes <span class="text-lime-300">créations</span>
+        </h2>
+        <span class="text-gray-500 text-sm">Maqu'Art</span>
+      </div>
+
+ 
+<!-- ÉCLAIRAGE ET GALERIE -->
+<div id="gallery-lighting" class="relative rounded-3xl p-6">
+
+  <!-- BOUTON ÉCLAIRAGE -->
+  <div class="text-center mb-8">
+    <button
+      type="button"
+      data-lamp-toggle
+      class="px-6 py-3 rounded-full border border-lime-300 text-lime-300 hover:bg-lime-300 hover:text-black transition">
+      ALLUMER L'ÉCLAIRAGE
+    </button>
+  </div>
+
+  <!-- PROJECTEURS -->
+  <span class="gallery-projector projector-one"></span>
+  <span class="gallery-projector projector-two"></span>
+  <span class="gallery-projector projector-three"></span>
+  <span class="gallery-projector projector-four"></span>
+
+  <!-- PHOTOS -->
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/maison.jpeg" alt="Maquette de maison" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/mmt.jpeg" alt="Réalisation artistique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/ours.jpeg" alt="Création artistique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/voyage.jpeg" alt="Projet artistique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/forme.jpg" alt="Travail sur les formes" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/cours.jpeg" alt="Activité artistique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/ex.jpeg" alt="Exposition" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/crie.jpeg" alt="Projet artistique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/loum.jpeg" alt="Réalisation artistique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/patop.jpeg" alt="Création artistique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <figure class="group overflow-hidden rounded-2xl border border-white/10">
+      <img src="img/reseau.jpeg" alt="Projet numérique" data-lightbox
+        class="w-full aspect-square object-cover cursor-pointer transition duration-500 group-hover:scale-105">
+    </figure>
+
+    <!-- VIDÉO INTÉGRÉE À LA GALERIE -->
+<figure class="group overflow-hidden rounded-2xl border border-white/10">
+  <video controls
+    class="w-full aspect-square object-cover bg-black">
+    <source src="img/champs.mp4" type="video/mp4">
+    Votre navigateur ne prend pas en charge cette vidéo.
+  </video>
+</figure>
+  </div>
+  <!-- BOUTON INSTAGRAM -->
+<div class="text-center mt-10">
+  <a
+    href="https://www.instagram.com/maquart.byelhadji/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-block px-8 py-4 rounded-full bg-lime-300 text-black font-bold hover:bg-lime-500 hover:scale-105 transition duration-300">
+    VOIR PLUS D'ŒUVRES
+  </a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+  
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+

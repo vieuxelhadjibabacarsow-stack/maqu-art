@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Maqu'Art</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <script src="./dist/index.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-black text-white">
+
+  <header class="border-b border-lime-300/20">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-lime-300">MAQU'ART</a>
+
+      <div class="flex gap-5 text-sm">
+        <a href="index.html" class="hover:text-lime-300">Accueil</a>
+        <a href="apropos.html" class="hover:text-lime-300">À propos</a>
+        <a href="galerie.html" class="hover:text-lime-300">Galerie</a>
+        <a href="contact.html" class="text-lime-300">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-20">
+
+    <section class="text-center mb-16">
+      <p class="text-lime-300 uppercase tracking-[0.4em] text-sm mb-4">
+        Restons en contact
+      </p>
+
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        Parlons de votre <span class="text-lime-300">projet.</span>
+      </h1>
+
+      <p class="text-gray-400 max-w-2xl mx-auto">
+        Une collaboration artistique, une exposition, une commande
+        ou simplement une question ? N'hésitez pas à me contacter.
+      </p>
+    </section>
+
+    <div class="h-px bg-gradient-to-r from-transparent via-lime-300 to-transparent mb-16"></div>
+
+    <section class="grid md:grid-cols-2 gap-12">
+
+      <!-- COORDONNÉES -->
+      <div>
+        <h2 class="text-2xl font-bold mb-8">
+          Mes <span class="text-lime-300">coordonnées</span>
+        </h2>
+
+        <div class="space-y-8">
+
+          <div>
+            <p class="text-lime-300 text-sm mb-2">Téléphone</p>
+            <a href="tel:+221765202249" class="text-lg hover:text-lime-300">
+              +221 76 520 22 49
+            </a>
+          </div>
+
+          <div>
+            <p class="text-lime-300 text-sm mb-2">Instagram</p>
+            <a href="https://www.instagram.com/maquart.byelhadji/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-lg hover:text-lime-300">
+              @maquart.byelhadji
+            </a>
+          </div>
+
+          <div>
+            <p class="text-lime-300 text-sm mb-2">Portfolio artistique</p>
+            <a href="https://maquartbyelhadjibabacarsow.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-lg hover:text-lime-300 break-all">
+              Découvrir mon portfolio
+            </a>
+          </div>
+
+        </div>
+
+        <div class="mt-12 p-6 rounded-2xl border border-lime-300/20 bg-lime-300/5">
+          <p class="text-lime-300 font-bold mb-2">Maqu'Art</p>
+          <p class="text-gray-400">
+            L'art, la créativité et l'engagement au service de l'expression.
+          </p>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8">
+
+        <h2 class="text-2xl font-bold mb-8">
+          Envoyez-moi un <span class="text-lime-300">message</span>
+        </h2>
+
+        <form action="https://formspree.io/f/xkjjyvjg" method="POST"
+          class="space-y-6">
+
+          <div>
+            <label for="name" class="block text-sm mb-2">Votre nom</label>
+            <input type="text" id="name" name="name" required
+              placeholder="Votre nom"
+              class="w-full rounded-lg bg-black border border-white/20 px-4 py-3 outline-none focus:border-lime-300">
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm mb-2">Votre adresse e-mail</label>
+            <input type="email" id="email" name="email" required
+              placeholder="exemple@email.com"
+              class="w-full rounded-lg bg-black border border-white/20 px-4 py-3 outline-none focus:border-lime-300">
+          </div>
+
+          <div>
+            <label for="subject" class="block text-sm mb-2">Sujet</label>
+            <input type="text" id="subject" name="subject" required
+              placeholder="Objet de votre message"
+              class="w-full rounded-lg bg-black border border-white/20 px-4 py-3 outline-none focus:border-lime-300">
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm mb-2">Votre message</label>
+            <textarea id="message" name="message" rows="5" required
+              placeholder="Écrivez votre message ici..."
+              class="w-full rounded-lg bg-black border border-white/20 px-4 py-3 outline-none focus:border-lime-300 resize-y"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full rounded-full bg-lime-300 text-black font-bold py-4 hover:bg-lime-200 transition">
+            ENVOYER LE MESSAGE
+          </button>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="border-t border-lime-300/20 text-center py-8">
+    <p class="text-gray-500 text-sm">
+      © 2026 Maqu'Art — Tous droits réservés.
+    </p>
+  </footer>
+
+</body>
+</html>

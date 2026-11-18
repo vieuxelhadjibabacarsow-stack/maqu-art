@@ -6,7 +6,7 @@
   "scripts": {
     "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
     "dev:ts": "npx tsc --watch",
-    "build": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./dist/output.css && npx tsc"
+    "build": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./dist/output.css && node ./node_modules/typescript/bin/tsc"
   },
   "keywords": [],
   "author": "",
